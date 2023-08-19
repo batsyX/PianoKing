@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.head h1{
+    position: relative;
+    color: white;
+}
+.head h1:after{
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: white;
+}
+
+body{
+    min-height: 100vh;
+    background: url("https://wallpaperaccess.com/full/1891199.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.white{
+
+    height: 400px;
+    width: 70px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-weight: 550;
+    font-size: 15px;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.black{
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+    height: 250px;
+    width: 50px;
+    background:rgb(10, 10, 10);
+    border-radius: 0 0 10px 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.two{
+    left: 50px;
+}
+.three{
+    left: 115px;
+}
+.four{
+    left: 255px;
+}
+.five{
+    left: 325px;
+}
+.six{
+    left: 395px;
+}
+.seven{
+    right: 115px;
+}
+.eight{
+    right: 45px;
+}
+.piano{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    padding: 50px;
+    background: rgb(31, 31, 31);
+    border-radius: 15px;
+}
+.white:hover{
+    background:rgb(228, 228, 228);
+}
+.black:hover{
+    background: rgb(24, 24, 24);
+    
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4b4a4a;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  } 
+  input:checked + .slider {
+    background-color: #2196F3;
+  } 
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  } 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  } 
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .lab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 20px 0;
+  }
+  .lab h3{
+    color: white;
+    padding-right: 30px;
+  }
+  .highlight1{
+    background:rgb(224, 224, 224);
+  }
+  .highlight2{
+    background: rgb(24, 24, 24);
+  }
+  .hide1{
+    color: white;
+  }
+  .hide2{
+    color: black;
+  }
