@@ -171,3 +171,26 @@ body{
   .hide2{
     color: black;
   }
+
+@media(max-width:500px){
+    
+    .piano{
+      margin-top:150px ;
+    }
+   .container{
+    max-height: 300px;
+    max-width: 700px;
+    transform: rotate(90deg);
+    flex-shrink: 1;
+   }
+   .switch{
+    display: none;
+   }
+   
+   body{
+    min-height: 100vh;
+    background: url("https://wallpaperaccess.com/full/1891199.png") ;
+    background-position: center;
+    background-size: cover;
+}
+  }
